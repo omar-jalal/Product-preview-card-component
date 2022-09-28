@@ -1,0 +1,169 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+main {
+    margin: 2em auto;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.6rem;
+}
+.testimonials {
+    display: flex;
+    justify-content: space-between;
+    max-width: 40vw;
+    box-shadow: 2em 2em 7em rgba(0,0,0,.3);
+}
+picture {
+    margin: 0;
+    flex-basis: 50%;
+}
+
+picture img {
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: .500rem 0 0 .500rem;
+}
+
+.info {
+    flex-basis: 50%;
+}
+
+.info .container {
+    width: 80%;
+    margin: auto;
+}
+
+.info h1 {
+    color: hsl(212, 21%, 14%);
+    margin: .5em 0;
+    line-height: 2rem;
+}
+
+.info p {
+    margin-top: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    gap: 1em;
+}
+
+.info pre, .info p, .info button, .info .prices .dis {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.info pre, .info p, .info .prices .dis {
+    font-size: 0.875rem;
+    color: gray;
+}
+
+.info pre {
+    margin-top: 2em;
+    margin-bottom: 0;
+}
+
+.info h1, .info .prices {
+    font-family: 'Fraunces', serif;
+}
+
+.info .prices {
+    display: flex;
+    margin-bottom: 2em;
+    flex-wrap: wrap;
+}
+
+.info .prices .price {
+    color: hsl(158, 36%, 37%);
+    font-size: 2rem;
+    margin-right: 1rem;
+}
+
+.info .prices .dis {
+    align-self: center;
+}
+
+button {
+    background-color: hsl(158, 36%, 37%);
+    color: hsl(0, 0%, 100%);
+    border: 0;
+    align-self: center;
+    border-radius: 0.500rem;
+    padding: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    margin-bottom: 2em;
+}
+
+button:hover {
+    background-color: hsl(158, 36%, 30%);
+    transition: background-color 0.25s ease-in-out;
+    cursor: pointer;
+}
+
+button:active {
+    background-color: hsl(158, 36%, 20%);
+    transition: background-color 0s;
+}
+
+button img {
+    margin-right: 0.875rem;;
+}
+
+/* Mobile Layout */
+
+@media(max-width: 37.5rem) {
+    .testimonials {
+        flex-direction: column;
+        max-width: 90vw;
+    }
+
+    picture {
+        margin: 0;
+    }
+
+    
+    picture img {
+        border-radius: .500rem .500rem 0 0;
+    }
+
+    .info .container {
+        width: 90%;
+        margin: auto;
+    }
+    
+    .info pre {
+        margin-top: 1rem;
+        margin-bottom: 0.875rem;
+    }
+
+    .info .prices {
+        margin-bottom: 1rem;
+    }
+
+    .info h1 {
+        margin-top: 0;
+        margin-bottom: 1rem;;
+        line-height: 2rem;
+    }
+
+    .info p {
+        margin-top: 0;
+        margin-bottom: 1.5rem;
+    }
+
+    .info .prices {
+        margin-bottom: 1.5rem;
+    }
+}
